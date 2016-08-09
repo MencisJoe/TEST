@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Navbar</title>
+	<title>Carousel</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale="1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -9,13 +9,13 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div id="MyCarousel" class="carousel-slide">
+<div id="MyCarousel" class="carousel slide" data-ride="carousel">
 	<ol class="carousel-indicators">
 	<li data-target="#MyCarousel" data-slide-to="0" class="active"></li>
 	<li data-target="#MyCarousel" data-slide-to="1"></li>
 	<li data-target="#MyCarousel" data-slide-to="2"></li>
 	</ol>
-	<div class="carousel-inner">
+	<div class="carousel-inner" role="listbox">
 		<div class="item active">
 			<img src="http://www.hdwallpapers.in/walls/maybach_zeppelin_classic-wide.jpg" style="width:100%" class="img-reponsive">
 			<div class="container">
@@ -41,9 +41,9 @@
 			</div>
 		</div>
 	</div>
-	<a class="left carousel-control" href="#MyCarousel" data-slide="prev">
+	<a class="left carousel-control" href="#MyCarousel" role="button" data-slide="prev">
 		<span class="icon-prev"></span></a>
-	<a class="right carousel-control" href="MyCarousel" data-slide="next">
+	<a class="right carousel-control" href="MyCarousel" role="button" data-slide="next">
 		<span class="icon-next"></span></a>
 </div>
 </body>
