@@ -20,6 +20,34 @@ width:150px;
 height:150px;
 margin-top:80px;
 }
+@keyframes turn{
+	0%   {transform:rotateY(72deg);}
+    25%  {transform:rotateZ(144deg);}
+    50%  {transform:rotateZ(216deg);}
+	75%  {transform:rotateZ(288deg);}
+    100% {transform:rotateZ(360deg);}
+}
+.rotate:hover{
+animation-name:turn;
+animation-duration: 1s;
+transition:transform 1s linear;
+}
+@keyframes move{
+	0%   {transform:translate(10px);}
+    25%  {transform:translate(-10px);}
+    50%  {transform:translate(10px);}
+	75%  {transform:translate(-10px);}
+    100% {transform:translate(10px);}
+}
+#fly:hover{
+animation-name:move;
+animation-duration: 0.5s;
+transition:transform 0.5s linear;
+color:skyblue;
+}
+a.navbar-brand:hover{
+color:skyblue;
+}
 </style>
 <body>
 <nav class="navbar navbar-default">
@@ -30,7 +58,7 @@ margin-top:80px;
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		</button>
-		<a href="#" class="navbar-brand">Flatfly</a>
+		<a href="#" class="navbar-brand" id="fly">Flatfly</a>
 	</div>
 	<div class="collapse navbar-collapse navbar-right" id="MyNavBar">
 		<ul class="nav navbar-nav">
@@ -49,34 +77,34 @@ margin-top:80px;
 </div>
 <div class="row first text-center">
 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-		<img src="http://1img.org/wp-content/uploads/2016/07/Rio-2016-olympics-gold-medals-6-450x559.jpg" class="img-circle">
+		<img src="http://1img.org/wp-content/uploads/2016/07/Rio-2016-olympics-gold-medals-6-450x559.jpg" class="img-circle rotate">
 		<h2>Gold</h2>
 		<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-		<img src="https://cdn0.iconfinder.com/data/icons/sport-balls/512/silver_medal.png" class="img-circle">
+		<img src="https://cdn0.iconfinder.com/data/icons/sport-balls/512/silver_medal.png" class="img-circle rotate">
 		<h2>Silver</h2>
 		<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-		<img src="https://thumbs.dreamstime.com/x/bronze-medal-13534679.jpg" class="img-circle">
+		<img src="https://thumbs.dreamstime.com/x/bronze-medal-13534679.jpg" class="img-circle rotate">
 		<h2>Bronze</h2>
 		<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
 	</div>
 </div>
 <div class="row second text-center">
 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-		<img src="http://downloadicons.net/sites/default/files/red-number-1-icon-24479.png" class="img-circle">
+		<img src="http://downloadicons.net/sites/default/files/red-number-1-icon-24479.png" class="img-circle rotate">
 		<h2>One</h2>
 		<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-		<img src="http://www.bu.edu/cgcm/files/2012/03/128221-simple-red-square-icon-alphanumeric-number-2.png" class="img-circle">
+		<img src="http://www.bu.edu/cgcm/files/2012/03/128221-simple-red-square-icon-alphanumeric-number-2.png" class="img-circle rotate">
 		<h2>Two</h2>
 		<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-		<img src="http://downloadicons.net/sites/default/files/red-number-3-icon-24387.png" class="img-circle">
+		<img src="http://downloadicons.net/sites/default/files/red-number-3-icon-24387.png" class="img-circle rotate">
 		<h2>Three</h2>
 		<p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum.</p>
 	</div>
